@@ -1,13 +1,14 @@
 import { headers as getHeaders } from 'next/headers.js'
 import Image from 'next/image'
 import { getPayload } from 'payload'
-import React from 'react'
 import { fileURLToPath } from 'url'
+import { redirect } from 'next/navigation'
 
 import config from '@/payload.config'
 import './styles.css'
 
 export default async function HomePage() {
+  redirect('/construction')
   const headers = await getHeaders()
   const payloadConfig = await config
   const payload = await getPayload({ config: payloadConfig })
@@ -28,7 +29,7 @@ export default async function HomePage() {
           />
         </picture>
         {!user && <h1>Welcome to your new project.</h1>}
-        {user && <h1>Welcome back, {user.email}</h1>}
+        {user && <h1>Welcome back, {user?.email}</h1>}
         <div className="links">
           <a
             className="admin"
