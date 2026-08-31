@@ -1,4 +1,3 @@
-import { Link } from 'next/link';
 import { NavigationLink } from '@/app/components/navigation-link'
 
 const navItems = [

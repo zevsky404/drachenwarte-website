@@ -6,9 +6,10 @@ import { redirect } from 'next/navigation'
 
 import config from '@/payload.config'
 import './styles.css'
+import ZkComponent from '../components/zk-component'
 
 export default async function HomePage() {
-  redirect('/construction')
+  //redirect('/construction')
   const headers = await getHeaders()
   const payloadConfig = await config
   const payload = await getPayload({ config: payloadConfig })
@@ -47,6 +48,8 @@ export default async function HomePage() {
           >
             Documentation
           </a>
+          <ZkComponent>
+          </ZkComponent>
         </div>
       </div>
       <div className="footer">
