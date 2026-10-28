@@ -2,7 +2,7 @@
   "servers": {
     "hyper-canvas": {
       "type": "http",
-      "url": "http://127.0.0.1:33997/mcp?token=e43bb3060c86f5ca39f7269559ff1acd76355b3263415a1d"
+      "url": "http://127.0.0.1:40583/mcp?token=32dab3f1c9c6842494ba6e3c4743f1b8249ff99dfc2eb284"
     },
     "playwright": {
       "command": "npx",
