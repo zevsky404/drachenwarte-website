@@ -14,9 +14,8 @@ export default async function RootLayout(props: { children: React.ReactNode }) {
   const { children } = props
 
   return (
-    <html lang="en">
+    <html lang="de">
       <body className={`${modernAntiqua.className} antialiased`}>
-        <TopNavbar />
         <main>{children}</main>
       </body>
     </html>
